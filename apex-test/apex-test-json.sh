@@ -1,5 +1,5 @@
 # Get list of org aliases from sfdx
-for org in `sfdx force:org:list --json | jq -r '.result.nonScratchOrgs[] | select(.connectedStatus | contains("Connected"))' | jq -r 'select(.username | contains("citi.com.crsprod"))' | jq -r ".alias"` 
+for org in `sfdx force:org:list --json | jq -r '.result.nonScratchOrgs[] | select(.connectedStatus | contains("Connected"))' | jq -r ".alias"` 
 
 do
 	echo running apex tests in org $org
