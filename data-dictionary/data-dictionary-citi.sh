@@ -1,4 +1,4 @@
-orgalias=crsprod
+orgalias=olympusuat
 echo "Category,Object,Field,Label,Help,Type,Relathioship,Length,Scale,Precision,IsCustom,IsCalculated,IsEncrypted"
 
 #core objects    
